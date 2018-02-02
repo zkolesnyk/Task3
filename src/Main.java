@@ -3,7 +3,7 @@ public class Main {
         int n = 11;
         int sum = 0;
 
-        while (n > n-1 && n != 0) {
+        while (n != 0) {
             sum += n;
             n--;
         }

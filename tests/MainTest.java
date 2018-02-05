@@ -15,7 +15,6 @@ class MainTest {
         float expected = Main.prog(x, y);
 
         // assert
-
         assertEquals(actual, expected);
     }
 }

@@ -5,14 +5,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class MainTest {
 
     @Test
-    void progTest(int x, int y) {
+    void resultToStrTest() {
         // arrange
-        x = 1;
-        y = 100;
-        float actual = 0.01f;
+        int x = 1;
+        int y = 100;
+        String actual = "0,01";
 
         // act
-        float expected = Main.prog(x, y);
+        String expected = Main.resultToStr(x, y);
 
         // assert
         assertEquals(actual, expected);

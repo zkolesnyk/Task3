@@ -13,7 +13,7 @@ public class Main {
         } else return 0;
     }
 
-    private static String resultToStr(int x, int y) {
+    public static String resultToStr(int x, int y) {
         if (Math.abs(prog(x, y)) == 0.00) {
             return String.format("%.0f", prog(x, y));
         } else return String.format("%.2f", prog(x, y));

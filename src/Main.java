@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
         int x = 15;
         int y = 2;
-//        System.out.println();
         System.out.println(resultToStr(x, y));
     }
 

@@ -8,7 +8,7 @@ public class Main {
         System.out.println(resultToStr(x, y));
     }
 
-    public static Triplet<Integer, Float, Boolean> prog(int x, int y) {
+    private static Triplet<Integer, Float, Boolean> prog(int x, int y) {
 
         if (x % 2 == 0) {
             return new Triplet<Integer, Float, Boolean>(x * y, (float) x * y, true);

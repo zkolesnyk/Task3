@@ -13,7 +13,7 @@ class MainTest {
     }
 
     @Test
-    void resultToStrTest() {
+    void resultToStrTestOddXTest() {
         assertEquals(Main.resultToStr(1, 1000), "0,001");
     }
 }

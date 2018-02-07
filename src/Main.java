@@ -9,14 +9,10 @@ public class Main {
 
     public static Triplet<Integer, Float, Boolean> prog(int x, int y) {
 
-        int resX = 0;
-        float resY = 0f;
         if (x % 2 == 0) {
-            resX = x * y;
-            return new Triplet<Integer, Float, Boolean>(resX, 0f, true);
+            return new Triplet<Integer, Float, Boolean>(x * y, 0f, true);
         } else if (x % 2 != 0 && y != 0) {
-            resY = ((float) x) / y;
-            return new Triplet<Integer, Float, Boolean>(0, resY, false);
+            return new Triplet<Integer, Float, Boolean>(0, (float) x / y, false);
         }
         return new Triplet<Integer, Float, Boolean>(0, 0f, true);
     }

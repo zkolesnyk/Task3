@@ -2,8 +2,8 @@ import org.javatuples.Triplet;
 
 public class Main {
     public static void main(String[] args) {
-        int x = 16;
-        int y = 4;
+        int x = 15;
+        int y = 3;
         System.out.println(resultToStr(x, y));
     }
 
@@ -19,6 +19,11 @@ public class Main {
 
     public static String resultToStr(int x, int y) {
 
-        return (prog(x, y).getValue2()) ? String.format("%s", prog(x, y).getValue0()) : String.format("%s", prog(x, y).getValue1());
+        if (prog(x, y).getValue2()) {
+            return String.format("%s", prog(x, y).getValue0());
+        } else {
+            if (prog(x, y).getValue1() % 1 != 0) return String.format("%s", prog(x, y).getValue1()).replace(".", ",");
+            else return String.format("%.0f", prog(x, y).getValue1()).replace(".", ",");
+        }
     }
 }

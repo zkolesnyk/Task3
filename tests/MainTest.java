@@ -15,5 +15,6 @@ class MainTest {
     @Test
     void resultToStrTestOddXTest() {
         assertEquals(Main.resultToStr(1, 1000), "0,001");
+        assertEquals(Main.resultToStr(15, 3), "5");
     }
 }
